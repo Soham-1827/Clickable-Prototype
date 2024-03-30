@@ -233,6 +233,9 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Educational Content"/>
+                                <connections>
+                                    <segue destination="oEQ-vc-536" kind="presentation" id="itp-Nz-zfS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-by-g5h">
                                 <rect key="frame" x="277" y="86" width="100" height="83"/>
@@ -1001,21 +1004,72 @@
             </objects>
             <point key="canvasLocation" x="1748.854961832061" y="-775.35211267605632"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="yfg-ZL-Vkz">
+            <objects>
+                <viewController id="oEQ-vc-536" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dze-as-92f">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Educational Content" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tb-8P-VtR">
+                                <rect key="frame" x="16" y="93" width="361" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image 3" translatesAutoresizingMaskIntoConstraints="NO" id="5g6-cZ-BtW">
+                                <rect key="frame" x="79" y="239" width="235" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lecture Recordings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g6u-2a-3ax">
+                                <rect key="frame" x="47" y="541" width="298" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNI-3T-uLG">
+                                <rect key="frame" x="140" y="701" width="112" height="69"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Back"/>
+                                <connections>
+                                    <segue destination="WLL-UN-NOq" kind="presentation" id="vra-pb-U8v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="x5s-tp-GBv"/>
+                        <color key="backgroundColor" systemColor="systemPinkColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSW-Mt-zVB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2956" y="8"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="KRS-IF-71I"/>
         <segue reference="im1-CE-NRh"/>
-        <segue reference="IAo-yc-dCa"/>
+        <segue reference="Qga-yw-pTo"/>
         <segue reference="ZGY-mf-A43"/>
         <segue reference="KTK-I9-VkM"/>
-        <segue reference="aed-0n-gSI"/>
-        <segue reference="rRM-AC-NlK"/>
-        <segue reference="Snp-Zg-rkb"/>
+        <segue reference="Fbo-iU-pgA"/>
+        <segue reference="vra-pb-U8v"/>
+        <segue reference="vEp-64-PZV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="96" height="96"/>
         <image name="Image 1" width="458" height="266"/>
         <image name="Image 2" width="691" height="858"/>
+        <image name="Image 3" width="360" height="360"/>
         <image name="businessman" width="512" height="512"/>
         <image name="keyboard" width="512" height="512"/>
         <image name="phone" width="512" height="512"/>
@@ -1048,6 +1102,9 @@
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
